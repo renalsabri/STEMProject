@@ -199,3 +199,116 @@ body {
   color: #2874A6; 
   font-weight: 700;
 }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background: #FFFFFF;
+  border-left: 5px solid #3A9D8B; /* Warna hijau mint gelap */
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h4 {
+  color: #2874A6; /* Biru Tua */
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: #2C3E50;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* --- Tabel Matriks Empati --- */
+.table-responsive {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(174, 214, 241, 0.4);
+}
+
+.empathy-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #FFFFFF;
+  min-width: 800px; /* Memastikan tabel tidak terlalu terjepit di HP */
+}
+
+.empathy-table th, 
+.empathy-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #AED6F1;
+  color: #2C3E50;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+.empathy-table th {
+  background-color: #2874A6;
+  color: #FFFFFF;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.empathy-table tbody tr:nth-child(even) {
+  background-color: #F8FBFB; /* Warna selang-seling */
+}
+
+.empathy-table tbody tr:hover {
+  background-color: #E8F6F3; /* Warna highlight mint saat di-hover */
+}
+
+.lean-canvas-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #FFFFFF;
+  min-width: 900px; /* Lebar minimum agar bentuk Lean Canvas tidak hancur */
+}
+
+.lean-canvas-table td.lc-cell {
+  border: 2px solid #2874A6;
+  padding: 1rem;
+  vertical-align: top;
+  font-size: 0.9rem;
+  color: #2C3E50;
+  width: 20%; /* Lebar default untuk 5 kolom */
+}
+
+.lean-canvas-table td.lc-cell strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #3A9D8B;
+  border-bottom: 1px solid #E8F6F3;
+  padding-bottom: 0.3rem;
+}
+
+.lean-canvas-table ul {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.lean-canvas-table p {
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
